@@ -1,0 +1,21 @@
+.slogan-background{
+    width: 100%;
+    height: 100vh;
+    background: #D2122E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.logo-tp2{
+    width: 55%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.slogan{
+    font-size: 2rem;
+    font-weight: 500;
+    color: white;
+    margin-top: 96px;
+}

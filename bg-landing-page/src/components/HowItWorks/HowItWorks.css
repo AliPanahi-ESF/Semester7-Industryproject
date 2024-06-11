@@ -1,0 +1,37 @@
+.how-it-works{
+    width: 100%;
+    height: 100vh;
+    background-color: #141317;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+.how-it-works-title{
+    color: #D2122E;
+    font-size: 4rem;
+    font-weight: 900;
+    margin-bottom: 40px;
+}
+.boxes{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.box{
+    background-color:#1C1A1E;
+    color: white;
+    padding: 40px;
+    width: 400px;
+    min-height: 263.94px;
+    border-radius: 10px;
+    text-align: center;
+}
+.heroes-gallery{
+    position: relative;
+    bottom: -490px;
+    border-color: #D2122E;
+
+}
+h4{
+    padding: 25px;
+}
