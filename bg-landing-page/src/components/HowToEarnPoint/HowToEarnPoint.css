@@ -1,0 +1,84 @@
+.how-to-earn-point,
+.tiers-system {
+    width: 100%;
+    height: 100vh;
+    background-color: #141317;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.boxes,
+.tiers-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    flex-wrap: wrap; /* Ensure the boxes wrap on smaller screens */
+}
+
+.red-box,
+.bronz-box,
+.silver-box,
+.gold-box,
+.platinum-box {
+    background-color: #D2122E;
+    color: white;
+    padding: 40px;
+    width: 204px;
+    min-height: 100px;
+    border-radius: 68px;
+    text-align: center;
+    margin-top: 32px;
+    background-position: center;
+    background-size: cover; /* Ensure the background image covers the box */
+}
+
+.bronz-box {
+    background: url('src/assets/Tier-Bronz.png') center / cover no-repeat;
+}
+
+.silver-box {
+    background: url('src/assets/Tier-Silver.png') center / cover no-repeat;
+}
+
+.gold-box {
+    background: url('src/assets/Tier-Gold.png') center / cover no-repeat;
+}
+
+.platinum-box {
+    background: url('src/assets/Tier-Platinum.png') center / cover no-repeat;
+}
+
+h3 {
+    text-shadow: 2px 2px #000000;
+}
+
+h2 {
+    margin-top: 25px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .how-to-earn-point,
+    .tiers-system {
+        height: auto; /* Allow the height to adjust based on content */
+        padding: 20px 10px;
+    }
+
+    .red-box,
+    .bronz-box,
+    .silver-box,
+    .gold-box,
+    .platinum-box {
+        width: 100%;
+        padding: 20px;
+        margin-top: 20px;
+        border-radius: 20px;
+    }
+
+    .boxes,
+    .tiers-boxes {
+        gap: 5%; /* Adjust gap for smaller screens */
+    }
+}

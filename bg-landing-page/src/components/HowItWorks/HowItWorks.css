@@ -1,4 +1,4 @@
-.how-it-works{
+.how-it-works {
     width: 100%;
     height: 100vh;
     background-color: #141317;
@@ -6,32 +6,62 @@
     padding: 50px 20px;
     text-align: center;
 }
-.how-it-works-title{
+
+.how-it-works-title {
     color: #D2122E;
     font-size: 4rem;
     font-weight: 900;
     margin-bottom: 40px;
 }
-.boxes{
+
+.boxes {
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap; /* Ensure the boxes wrap on smaller screens */
 }
-.box{
-    background-color:#1C1A1E;
+
+.box {
+    background-color: #1C1A1E;
     color: white;
     padding: 40px;
     width: 400px;
     min-height: 263.94px;
     border-radius: 10px;
     text-align: center;
+    margin-top: 20px; /* Added to create space between rows of boxes */
 }
-.heroes-gallery{
-    position: relative;
-    bottom: -490px;
-    border-color: #D2122E;
 
+.heroes-gallery {
+    position: relative;
+    bottom: -30%;
+    border-color: #D2122E;
 }
-h4{
+
+h4 {
     padding: 25px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .how-it-works {
+        height: auto; /* Allow the height to adjust based on content */
+        padding: 20px 10px;
+    }
+
+    .how-it-works-title {
+        font-size: 2.5rem; /* Adjust font size for smaller screens */
+        margin-bottom: 20px;
+    }
+
+    .box {
+        width: 100%;
+        padding: 20px;
+        margin-top: 20px;
+        border-radius: 10px;
+    }
+
+    .boxes {
+        gap: 10px; /* Adjust gap for smaller screens */
+    }
 }

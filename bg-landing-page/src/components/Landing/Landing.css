@@ -1,0 +1,114 @@
+.landing {
+  --scale: (100vw / 1440);
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.landing__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.landing__background--red {
+  background: #D2122E;
+}
+
+.landing__background--black {
+  background: rgb(210, 18, 46);
+  background: radial-gradient(circle, rgba(210, 18, 46, 1) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+.landing__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.landing__heading {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  letter-spacing: -0.04em;
+  font-size: calc(100 * var(--scale));
+  line-height: calc(88 * var(--scale));
+}
+
+.landing__heading span {
+  display: block;
+}
+
+.landing__paragraph {
+  margin: calc(40 * var(--scale)) 0 0;
+  max-width: calc(600 * var(--scale));
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  font-size: calc(22 * var(--scale));
+  line-height: 1;
+  text-align: center;
+}
+
+.landing__marquee-back {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: calc(320 * var(--scale));
+}
+
+.landing__marquee {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: calc(420 * var(--scale));
+}
+
+.marquee {
+  overflow: hidden;
+}
+
+.marquee__content {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 100%;
+}
+
+.marquee__content,
+.marquee__item,
+.marquee__image {
+  height: 100%;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .landing {
+    height: auto; /* Allow height to adjust based on content */
+    padding: 20px 10px;
+  }
+
+  .landing__heading {
+    font-size: 2.5rem; /* Adjust font size for smaller screens */
+    line-height: 1.2;
+  }
+
+  .landing__paragraph {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+    margin-top: 20px;
+    max-width: 90%; /* Reduce max width for smaller screens */
+  }
+
+  .landing__marquee-back,
+  .landing__marquee {
+    height: auto; /* Allow height to adjust based on content */
+  }
+}

@@ -1,0 +1,33 @@
+.marquee {
+  overflow: hidden;
+}
+
+.marquee__content {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 100%;
+}
+
+.marquee__content,
+.marquee__item,
+.marquee__image {
+  height: 100%;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .marquee__content {
+    flex-wrap: wrap; /* Allow the items to wrap on smaller screens */
+  }
+
+  .marquee__item {
+    width: 100%; /* Make each item take full width on smaller screens */
+    padding: 10px; /* Add padding for better spacing */
+  }
+
+  .marquee__image {
+    width: 100%; /* Ensure images fit within their containers */
+    object-fit: cover; /* Ensure the images cover the entire area without distortion */
+  }
+}
